@@ -1,0 +1,14 @@
+<html t:type="layout" title="testapp Index"
+      t:sidebarTitle="Framework Version"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_3.xsd"
+        >
+<t:form t:id="searchForm" zone="tableZone">
+    <t:textfield t:id="query" value="query" />
+    <t:submit />
+</t:form>
+
+<t:zone t:id="tableZone">
+    <t:grid t:id="table" source="entities" />
+</t:zone>
+
+</html>
